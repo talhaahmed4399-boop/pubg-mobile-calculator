@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PUBG Mobile Pro Calculator</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PUBG Pointed Calc</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>PUBG Mobile Pro Point Calculator</h1>
-  </header>
+<header>
+<h1>PUBG Pointed Calculator</h1>
+</header>
 
-  <nav>
-    <button onclick="showSection('lobby')">Lobby Calculator</button>
-    <button onclick="showSection('shortlist')">Shortlist</button>
-    <button onclick="showSection('poster')">Team Poster</button>
-    <button onclick="showSection('warheads')">Warheads</button>
-    <button onclick="showSection('records')">Top Records</button>
-  </nav>
+<nav>
+<button onclick="showSection('lobby')">Lobby Calculator</button>
+<button onclick="showSection('shortlist')">Shortlist</button>
+<button onclick="showSection('poster')">Team Poster</button>
+<button onclick="showSection('warheads')">Warheads</button>
+<button onclick="showSection('records')">Top Records</button>
+</nav>
 
-  <section id="lobby">
-    <h2>Lobby Points Calculator</h2>
-    <textarea id="lobbyData" placeholder="Enter Player,Kills,Rank (one per line)
+<section id="lobby">
+<h2>Lobby Points Calculator</h2>
+<textarea id="lobbyData" placeholder="Player,Kills,Rank (one per line)
 Example:
 Player1,5,1
 Player2,2,3"></textarea>
-    <button onclick="calculateLobbyPoints()">Calculate Lobby Points</button>
-    <pre id="lobbyResults"></pre>
-  </section>
+<button onclick="calculateLobbyPoints()">Calculate Lobby Points</button>
+<pre id="lobbyResults"></pre>
+</section>
 
-  <section id="shortlist" style="display:none">
-    <h2>Shortlist Top Players</h2>
-    <button onclick="generateShortlist()">Generate Shortlist</button>
-    <ul id="shortlistResults"></ul>
-  </section>
+<section id="shortlist" style="display:none">
+<h2>Shortlist Top Players</h2>
+<button onclick="generateShortlist()">Generate Shortlist</button>
+<ul id="shortlistResults"></ul>
+</section>
 
-  <section id="poster" style="display:none">
-    <h2>Team Poster Generator</h2>
-    <input type="text" id="teamName" placeholder="Enter Team Name">
-    <button onclick="generateTeamPoster()">Generate Poster</button>
-    <canvas id="posterCanvas" width="600" height="400"></canvas>
-  </section>
+<section id="poster" style="display:none">
+<h2>Team Poster Generator</h2>
+<input type="text" id="teamName" placeholder="Enter Team Name">
+<button onclick="generateTeamPoster()">Generate Poster</button>
+<canvas id="posterCanvas" width="600" height="400"></canvas>
+</section>
 
-  <section id="warheads" style="display:none">
-    <h2>Warheads</h2>
-    <button onclick="generateWarheads()">Show Top Killers</button>
-    <ul id="warheadsResults"></ul>
-  </section>
+<section id="warheads" style="display:none">
+<h2>Warheads</h2>
+<button onclick="generateWarheads()">Show Top Killers</button>
+<ul id="warheadsResults"></ul>
+</section>
 
-  <section id="records" style="display:none">
-    <h2>Team Top Records</h2>
-    <button onclick="showTopRecords()">Show Records</button>
-    <ul id="recordsResults"></ul>
-  </section>
+<section id="records" style="display:none">
+<h2>Top Records</h2>
+<button onclick="showTopRecords()">Show Records</button>
+<ul id="recordsResults"></ul>
+</section>
 
-  <footer>
-    <p>&copy; PUBG Mobile Pro Calculator | eSports Style</p>
-  </footer>
+<footer>
+<p>&copy; PUBG Pointed Calculator | eSports Style</p>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
